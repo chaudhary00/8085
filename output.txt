@@ -1,0 +1,19 @@
+Enter 1 to type the code 		 2 to get code from file 		 3 to exit 
+2000 SET 2500, 0A
+2003 MVI B, 09
+2005 MVI C, 09H
+2007 MOV A, M
+2009 INX H 
+200c CMP M 
+200f JC SKIP 
+2012 JZ SKIP 
+2015 SET 2060,AA 
+2018 MOV D, M
+201a MOV M, A
+201c DCX H 
+201f MOV M, D
+2021 INX H 
+2024 JNZ BACK 
+2027 DCR B 
+202a JNZ START 
+202d   
